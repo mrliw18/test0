@@ -162,11 +162,20 @@ margin-right: 8px;
 
 
 }
-.form .form-group .form-child .show#box2
+.form .form-group .form-child .show#box2{
     background-color: transparent;
     position: absolute;
-    top: 405;
+    top: 405px;
     left: 592px;
     
+
+}
+@media (max-width=768px){
+        .image{
+        display: none;
+    }
+    .form-signup {
+        margin-right: 100px;
+    }
 
 }

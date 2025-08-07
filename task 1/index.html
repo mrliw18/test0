@@ -46,17 +46,19 @@
                             <input id="password" type="password" style="width: 640px;">
                             <label for="">Password</label>
                             <label class="show" for="" id="box1">
-                                <input type="checkbox" id="show-password">
+                                <input type="checkbox" id="show-password" 
+                                onchange="document.getElementById('password').type=this.checked ? 'text' : 'password'">
                                 <span class="custom-checkbox"></span>
                             </label>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="form-child" style="margin-left: 0;">
-                            <input type="password" style="width: 640px;">
+                            <input id="cpassword" type="password" style="width: 640px;">
                             <label for="">Confirm Password</label>
                              <label class="show" for="" id="box2">
-                                <input type="checkbox" id="show-password">
+                                <input type="checkbox" id="show-password"
+                                onchange="document.getElementById('cpassword').type=this.checked ? 'text' : 'cpassword'">
                                 <span class="custom-checkbox"></span>
                             </label>
                         
